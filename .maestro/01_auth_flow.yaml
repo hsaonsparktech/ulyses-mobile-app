@@ -1,0 +1,36 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: true
+
+# 1. Verify Welcome Screen elements
+- assertVisible: "Welcome to Libros"
+- assertVisible: "Create account"
+- assertVisible: "Sign in"
+
+# 2. Navigate to Sign In Screen
+- tapOn: "Sign in"
+- assertVisible: "Email address"
+- assertVisible: "Password"
+- assertVisible: "Continue securely"
+
+# 3. Test Navigation: Forgot Password
+- tapOn: "Forgot password?"
+- assertVisible: "Reset password"
+- assertVisible: "Send reset link"
+- back
+
+# 4. Test Navigation: Redeem Invite Code
+- assertVisible: "Enter your Libros account credentials."
+- tapOn: "Redeem a valid team access code.*"
+- assertVisible: "Join a business"
+- assertVisible: "Access code"
+- assertVisible: "Verify invitation"
+- back
+
+# 5. Sign In with Development Preview Credentials
+- assertVisible: "Enter your Libros account credentials."
+- tapOn: "Continue securely"
+
+# 6. Verify Redirection to Owner Experience
+- assertVisible: ".*Acme Services.*"

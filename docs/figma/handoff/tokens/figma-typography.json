@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "project": "Libros",
+    "figmaFileKey": "ynTITh3BXCJ5auNZaUEvkk",
+    "figmaFileUrl": "https://www.figma.com/design/ynTITh3BXCJ5auNZaUEvkk/ulyses0930-%7C%7C-AI-Powered-Accounting---Financial-Management-Application",
+    "retrievedAt": "2026-11-15",
+    "source": "Live Figma MCP: figma.variables.getLocalVariableCollectionsAsync/getLocalVariablesAsync; Figma component metadata",
+    "approval": "Official logo approved by client 2026-11-12; brand approval does not imply pricing/localization approval",
+    "collections": [
+      {
+        "name": "LB / Color Primitives",
+        "id": "VariableCollectionId:3:2",
+        "mode": "Value",
+        "modeId": "3:0",
+        "count": 45
+      },
+      {
+        "name": "LB / Semantic Colors",
+        "id": "VariableCollectionId:3:3",
+        "modes": {
+          "Light": "3:1",
+          "Dark": "3:2"
+        },
+        "count": 26
+      },
+      {
+        "name": "LB / Spacing",
+        "id": "VariableCollectionId:3:4",
+        "mode": "Value",
+        "count": 11
+      },
+      {
+        "name": "LB / Radius",
+        "id": "VariableCollectionId:3:5",
+        "mode": "Value",
+        "count": 7
+      }
+    ],
+    "notes": [
+      "All 26 semantic colors are Figma variable aliases resolved against 45 primitive colors.",
+      "All 45 primitives, 26 light/dark semantics, 11 spacings and 7 radii were retrieved.",
+      "Colors are hexadecimal RGB at alpha=1. The scrim tokens are base RGB colors; overlay opacity must be defined in component contexts, not guessed.",
+      "Figma fonts use Inter, but no font binaries are included in this pack.",
+      "Exact appearance SVG embeds original raster; approved editable SVG is not pixel-identical."
+    ]
+  },
+  "typeStyles": {
+    "Display": {
+      "source": "LB / Display",
+      "family": "Inter",
+      "style": "Bold",
+      "fontSize": 36,
+      "weight": 700
+    },
+    "Heading": {
+      "source": "LB / Heading",
+      "family": "Inter",
+      "style": "Bold",
+      "fontSize": 28,
+      "weight": 700
+    },
+    "Title": {
+      "source": "LB / Title",
+      "family": "Inter",
+      "style": "Semi Bold",
+      "fontSize": 22,
+      "weight": 600
+    },
+    "Section": {
+      "source": "LB / Section",
+      "family": "Inter",
+      "style": "Semi Bold",
+      "fontSize": 18,
+      "weight": 600
+    },
+    "Body": {
+      "source": "LB / Body",
+      "family": "Inter",
+      "style": "Regular",
+      "fontSize": 16,
+      "weight": 400
+    },
+    "BodySmall": {
+      "source": "LB / BodySmall",
+      "family": "Inter",
+      "style": "Regular",
+      "fontSize": 14,
+      "weight": 400
+    },
+    "Label": {
+      "source": "LB / Label",
+      "family": "Inter",
+      "style": "Semi Bold",
+      "fontSize": 14,
+      "weight": 600
+    },
+    "Caption": {
+      "source": "LB / Caption",
+      "family": "Inter",
+      "style": "Regular",
+      "fontSize": 12,
+      "weight": 400
+    },
+    "Amount": {
+      "source": "LB / Amount",
+      "family": "Inter",
+      "style": "Bold",
+      "fontSize": 32,
+      "weight": 700
+    }
+  }
+}

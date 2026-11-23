@@ -1,0 +1,22 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: true
+
+# 1. Navigate to Sign In Screen
+- tapOn: "Sign in"
+- assertVisible: "Email address"
+- assertVisible: "Password"
+
+# 2. Enter Real Seed Accountant Credentials
+- tapOn: "Email address"
+- inputText: "accountant@cpa-firm.com"
+- tapOn: "Password"
+- inputText: "AccountantPassword123!"
+
+# 3. Sign in securely against live backend
+- tapOn: "Continue securely"
+
+# 4. Verify Redirection to Accountant Experience
+- assertVisible: ".*Accountant.*"
+- assertVisible: "Client Overview"

@@ -1,0 +1,20 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: true
+
+# 1. Sign in as Owner
+- tapOn: "Sign in"
+- tapOn: "Email address"
+- inputText: "owner@acmeservices.com"
+- tapOn: "Password"
+- inputText: "OwnerPassword123!"
+- tapOn: "Continue securely"
+
+# 2. Verify Owner Dashboard and Navigate to Invoices
+- assertVisible: ".*Acme Services.*"
+- tapOn: "Invoices"
+
+# 3. Verify Invoices Screen
+- assertVisible: "Invoices"
+- assertVisible: "Create invoice"

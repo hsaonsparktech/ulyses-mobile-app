@@ -1,0 +1,102 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: true
+
+# 1. Sign In as Employee
+- extendedWaitUntil:
+    visible: ".*(Welcome to Libros|Sign in).*"
+    timeout: 60000
+
+- tapOn: "Sign in"
+- assertVisible: "Enter your Libros account credentials."
+- scrollUntilVisible:
+    element: "employee"
+    direction: DOWN
+- tapOn: "employee"
+- scrollUntilVisible:
+    element: "Continue securely"
+    direction: UP
+- tapOn: "Continue securely"
+
+# 2. Confirm Employee Workspace & Restricted Scope
+- assertVisible: "EMPLOYEE"
+- assertVisible: "Your workspace"
+- runFlow:
+    when:
+      visible: "Account tab icon, Account"
+    commands:
+      - tapOn: "Account tab icon, Account"
+- runFlow:
+    when:
+      notVisible: "Access profile"
+    commands:
+      - tapOn:
+          text: "Account"
+          optional: true
+- assertVisible: "Access profile"
+- assertVisible: "Employee · Scoped"
+
+# 3. Sign Out and Clean Remote Session
+- runFlow:
+    when:
+      notVisible: "Sign Out"
+    commands:
+      - scrollUntilVisible:
+          element: "Sign Out"
+          direction: DOWN
+- tapOn: "Sign Out"
+- assertVisible: "Enter your Libros account credentials."
+
+# 4. Sign In as Accountant
+- scrollUntilVisible:
+    element: "accountant"
+    direction: DOWN
+- tapOn: "accountant"
+- scrollUntilVisible:
+    element: "Continue securely"
+    direction: UP
+- tapOn: "Continue securely"
+
+# 5. Confirm Accountant Workspace & CPA Scope
+- assertVisible: "ACCOUNTANT"
+- assertVisible: "BUSINESS-SCOPED ACCESS"
+- runFlow:
+    when:
+      visible: "Account tab icon, Account"
+    commands:
+      - tapOn: "Account tab icon, Account"
+- runFlow:
+    when:
+      notVisible: "Accountant profile"
+    commands:
+      - tapOn:
+          text: "Account"
+          optional: true
+- assertVisible: "Accountant profile"
+- assertVisible: "Accountant Scope Matrix"
+
+# 6. Sign Out and Clean Remote Session
+- runFlow:
+    when:
+      notVisible: "Sign Out"
+    commands:
+      - scrollUntilVisible:
+          element: "Sign Out"
+          direction: DOWN
+- tapOn: "Sign Out"
+- assertVisible: "Enter your Libros account credentials."
+
+# 7. Sign In as Owner
+- scrollUntilVisible:
+    element: "owner"
+    direction: DOWN
+- tapOn: "owner"
+- scrollUntilVisible:
+    element: "Continue securely"
+    direction: UP
+- tapOn: "Continue securely"
+
+# 8. Confirm Owner Workspace
+- assertVisible: "Acme Services LLC"
+- assertVisible: "Estimated profit"

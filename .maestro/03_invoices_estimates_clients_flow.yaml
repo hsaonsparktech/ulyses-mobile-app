@@ -1,0 +1,71 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: false
+
+- assertVisible: ".*(Sign in|Financial overview|Invoices).*"
+
+# Authenticate if on Welcome screen
+- runFlow:
+    when:
+      visible: "Sign in"
+    commands:
+      - tapOn: "Sign in"
+      - assertVisible: "Continue securely"
+      - tapOn: "Continue securely"
+
+# 1. Navigate to Invoices screen
+- tapOn: "Invoices"
+- assertVisible: "OUTSTANDING"
+- assertVisible: "PAID THIS MONTH"
+
+# 2. Test Status Filtering
+- tapOn: "Paid"
+- assertVisible: ".*INV-0239.*"
+- tapOn: "Unpaid"
+- assertVisible: ".*INV-0241.*"
+- tapOn: "All"
+
+# 3. Test Invoice Detail Modal
+- tapOn: ".*INV-0241.*"
+- assertVisible: "Invoice INV-0241"
+- assertVisible: "Brand identity consultation"
+- tapOn: "Preview PDF"
+- assertVisible: "Invoice preview"
+# Close preview (returns directly to invoices list)
+- back
+
+# 4. Test Estimates & Quotes Modal
+- tapOn: "Estimates.*"
+- assertVisible: "Estimates"
+- assertVisible: ".*EST-0108.*"
+- tapOn: ".*EST-0108.*"
+- assertVisible: "Estimate preview"
+- assertVisible: "Convert to invoice"
+# Close estimate preview and return
+- back
+- tapOn: "Back to invoices"
+
+# 5. Test Clients Directory Modal
+- tapOn: "Clients.*"
+- assertVisible: "Clients"
+- assertVisible: ".*Riverbend Creative.*"
+- tapOn: ".*Riverbend Creative.*"
+- assertVisible: "Client profile"
+- assertVisible: "accounts@riverbend.co"
+- tapOn: "Close"
+- runFlow:
+    when:
+      visible: "Done"
+    commands:
+      - tapOn: "Done"
+- runFlow:
+    when:
+      visible: "Contacts and invoice history"
+    commands:
+      - back
+
+# Return to Dashboard
+- assertVisible: "Invoices"
+- tapOn: "Home"
+- assertVisible: "Financial overview"

@@ -1,0 +1,44 @@
+{
+  "source": "Live Figma approved COMPONENT descriptions for 371:77 and 371:88",
+  "approvedAt": "2026-11-12",
+  "assets": [
+    {
+      "path": "branding/open_book_icon_exact_appearance_OFFICIAL_SOURCE.svg",
+      "sha256": "b113e6a1be013286762dd9641c4bcdc5a03bf426af4d8fd2dffbf59c4feab1ed",
+      "figmaNode": "371:77",
+      "use": "Exact appearance, full textured tile. Embedded raster. Original uploaded source.",
+      "actualSha256": "b113e6a1be013286762dd9641c4bcdc5a03bf426af4d8fd2dffbf59c4feab1ed"
+    },
+    {
+      "path": "branding/open_book_icon_editable_OFFICIAL_SOURCE.svg",
+      "sha256": "e7148f5eb3447737c5eb9cb5e4424d3166af31743a18170ed8eefabdf6dbe950",
+      "figmaNode": "371:77/371:88",
+      "use": "Original editable gradient vector source with full white/tile background.",
+      "actualSha256": "e7148f5eb3447737c5eb9cb5e4424d3166af31743a18170ed8eefabdf6dbe950"
+    },
+    {
+      "path": "branding/libros_app_tile_exact_1254.png",
+      "pixelSize": [
+        1254,
+        1254
+      ],
+      "figmaNode": "371:77",
+      "use": "Exact-appearance app tile raster; faithful original PNG from prior approved brand pack.",
+      "actualSha256": "32929c6505a6f231e0b64efa7cbb9d6b6649fab1709cca12423bbd40e2427b2e"
+    },
+    {
+      "path": "branding/libros_open_book_mark_transparent_DERIVED.svg",
+      "figmaNode": "371:88",
+      "use": "Transparent compact mark derived from the exact approved editable source book-symbol group; not an unmodified Figma export. Verify against live component screenshot.",
+      "actualSha256": "e4c6d829d48c512e8bd439eae4d1b6d896caa15c5a9b58ba4efb39d375729f09"
+    }
+  ],
+  "notes": [
+    "Client logo approval covers book artwork as of 2026-11-12.",
+    "Exact-appearance and editable vector sources are not pixel-identical.",
+    "Do not trim gray textures from full tile.",
+    "Customer-uploaded invoice and estimate logos are separate business assets, not Libros brand marks.",
+    "Fonts are NOT included; use a licensed source to install Inter.",
+    "Brand redistributability/licensing and launcher icon device QA remain release checks."
+  ]
+}

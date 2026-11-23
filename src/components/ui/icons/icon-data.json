@@ -1,0 +1,689 @@
+{
+  "feedback/information": {
+    "width": 24,
+    "height": 24,
+    "viewBox": "0 0 24 24",
+    "paths": [
+      {
+        "d": "M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.85,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M12 10.5V15.8",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.85,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M12 8.2C12.4418 8.2 12.8 7.84183 12.8 7.4C12.8 6.95817 12.4418 6.6 12 6.6C11.5582 6.6 11.2 6.95817 11.2 7.4C11.2 7.84183 11.5582 8.2 12 8.2Z",
+        "fill": "#2459D8"
+      }
+    ]
+  },
+  "feedback/processing": {
+    "width": 24,
+    "height": 24,
+    "viewBox": "0 0 24 24",
+    "paths": [
+      {
+        "d": "M20.2 11.8C20.2163 9.92333 19.5883 8.09786 18.421 6.62835C17.2536 5.15884 15.6175 4.13423 13.7858 3.72558C11.9541 3.31693 10.0376 3.54897 8.35638 4.38296C6.67513 5.21695 5.33082 6.60242 4.54791 8.30806C3.76499 10.0137 3.59084 11.9363 4.05454 13.7548C4.51823 15.5734 5.59171 17.1779 7.09574 18.3004C8.59978 19.4229 10.4434 19.9955 12.3187 19.9226C14.194 19.8498 15.9876 19.1358 17.4 17.9",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.85,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M20.2 6.6V12.4H14.5",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.85,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "feedback/success": {
+    "width": 24,
+    "height": 24,
+    "viewBox": "0 0 24 24",
+    "paths": [
+      {
+        "d": "M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z",
+        "stroke": "#137754",
+        "strokeWidth": 1.85,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M7.8 12.3L10.6 15.1L16.1 9.4",
+        "stroke": "#137754",
+        "strokeWidth": 1.85,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "feedback/warning": {
+    "width": 24,
+    "height": 24,
+    "viewBox": "0 0 24 24",
+    "paths": [
+      {
+        "d": "M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z",
+        "stroke": "#BC3C48",
+        "strokeWidth": 1.85,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M12 7.2V13.2",
+        "stroke": "#BC3C48",
+        "strokeWidth": 1.85,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M12 17.3C12.4418 17.3 12.8 16.9418 12.8 16.5C12.8 16.0582 12.4418 15.7 12 15.7C11.5582 15.7 11.2 16.0582 11.2 16.5C11.2 16.9418 11.5582 17.3 12 17.3Z",
+        "fill": "#BC3C48"
+      }
+    ]
+  },
+  "utility/add": {
+    "width": 24,
+    "height": 24,
+    "viewBox": "0 0 24 24",
+    "paths": [
+      {
+        "d": "M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 2,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M12 7.5V12M12 12V16.5M12 12H7.5M12 12H16.5",
+        "stroke": "#2459D8",
+        "strokeWidth": 2,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "utility/bell": {
+    "width": 20,
+    "height": 20,
+    "viewBox": "0 0 20 20",
+    "paths": [
+      {
+        "d": "M15 6.66667C15 5.34058 14.4732 4.06881 13.5355 3.13113C12.5979 2.19345 11.3261 1.66667 10 1.66667C8.67392 1.66667 7.40215 2.19345 6.46447 3.13113C5.52678 4.06881 5 5.34058 5 6.66667C5 12.5 2.5 13.3333 2.5 15H17.5C17.5 13.3333 15 12.5 15 6.66667Z",
+        "stroke": "#13243C",
+        "strokeWidth": 1.58333,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M8.33333 17.5H11.6667",
+        "stroke": "#13243C",
+        "strokeWidth": 1.58333,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "utility/chevron-down": {
+    "width": 24,
+    "height": 24,
+    "viewBox": "0 0 24 24",
+    "paths": [
+      {
+        "d": "M6 9L12 15L18 9",
+        "stroke": "#52657C",
+        "strokeWidth": 2,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "utility/chevron-left": {
+    "width": 24,
+    "height": 24,
+    "viewBox": "0 0 24 24",
+    "paths": [
+      {
+        "d": "M14.5 6L8.5 12L14.5 18",
+        "stroke": "#2459D8",
+        "strokeWidth": 2,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "utility/chevron-right": {
+    "width": 24,
+    "height": 24,
+    "viewBox": "0 0 24 24",
+    "paths": [
+      {
+        "d": "M9.5 6L15.5 12L9.5 18",
+        "stroke": "#2459D8",
+        "strokeWidth": 2,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "utility/invoice": {
+    "width": 19,
+    "height": 19,
+    "viewBox": "0 0 19 19",
+    "paths": [
+      {
+        "d": "M11.0833 1.58333H4.75V17.4167H15.0417V5.54167M11.0833 1.58333H11.875L15.0417 4.75V5.54167M11.0833 1.58333V5.54167H15.0417M7.125 9.5H12.6667M7.125 12.6667H11.875",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.50417,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "utility/reports": {
+    "width": 19,
+    "height": 19,
+    "viewBox": "0 0 19 19",
+    "paths": [
+      {
+        "d": "M2.375 15.8333H16.625M4.75 13.4583V7.125H7.125V13.4583M9.5 13.4583V3.16667H11.875V13.4583M14.25 13.4583V8.70833H16.625V13.4583",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.50417,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "utility/scan": {
+    "width": 19,
+    "height": 19,
+    "viewBox": "0 0 19 19",
+    "paths": [
+      {
+        "d": "M3.16667 7.125V3.16667H7.125M11.875 3.16667H15.8333V7.125M15.8333 11.875V15.8333H11.875M7.125 15.8333H3.16667V11.875",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.50417,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M6.33333 9.5H12.6667",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.50417,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "utility/selection-check": {
+    "width": 14,
+    "height": 18,
+    "viewBox": "0 0 14 18",
+    "paths": [
+      {
+        "d": "M2.2 9.1L5.7 12.3L11.8 5.8",
+        "stroke": "white",
+        "strokeWidth": 2.2,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "utility/transaction-expense": {
+    "width": 22,
+    "height": 22,
+    "viewBox": "0 0 22 22",
+    "paths": [
+      {
+        "d": "M4.58333 1.83333H17.4167V20.1667L14.6667 18.3333L11 20.1667L7.33333 18.3333L4.58333 20.1667V1.83333Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.83333,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M7.33333 7.33333H14.6667M7.33333 11H14.6667M7.33333 14.6667H11.9167",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.83333,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "utility/transaction-income": {
+    "width": 22,
+    "height": 22,
+    "viewBox": "0 0 22 22",
+    "paths": [
+      {
+        "d": "M3.66667 15.5833L9.16667 10.0833L12.8333 12.8333L18.3333 6.41667M18.3333 11V6.41667H13.75",
+        "stroke": "#137754",
+        "strokeWidth": 1.83333,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M2.75 19.25H19.25",
+        "stroke": "#137754",
+        "strokeWidth": 1.83333,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/owner-activity-default": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M2.875 2.875V20.125H20.125",
+        "stroke": "#52657C",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M5.75 14.375L10.5417 9.58333L14.375 12.4583L19.1667 5.75",
+        "stroke": "#52657C",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/owner-activity-selected": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M2.875 2.875V20.125H20.125",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M5.75 14.375L10.5417 9.58333L14.375 12.4583L19.1667 5.75",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/owner-documents-default": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M2.875 5.75H9.58333L11.5 8.625H20.125V20.125H2.875V5.75Z",
+        "stroke": "#52657C",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M2.875 8.625H20.125",
+        "stroke": "#52657C",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/owner-documents-selected": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M2.875 5.75H9.58333L11.5 8.625H20.125V20.125H2.875V5.75Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M2.875 8.625H20.125",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/owner-home-default": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M2.875 9.58333L11.5 2.875L20.125 9.58333V19.1667H2.875V9.58333Z",
+        "stroke": "#52657C",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M8.625 20.125V13.4167H14.375V20.125",
+        "stroke": "#52657C",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/owner-home-selected": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M2.875 9.58333L11.5 2.875L20.125 9.58333V19.1667H2.875V9.58333Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M8.625 20.125V13.4167H14.375V20.125",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/owner-invoices-default": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M5.75 1.91667H14.375L18.2083 5.75V21.0833H5.75V1.91667Z",
+        "stroke": "#52657C",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M13.4167 1.91667V6.70833H18.2083",
+        "stroke": "#52657C",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M8.625 11.5H15.3333M8.625 15.3333H13.4167",
+        "stroke": "#52657C",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/owner-invoices-selected": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M5.75 1.91667H14.375L18.2083 5.75V21.0833H5.75V1.91667Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M13.4167 1.91667V6.70833H18.2083",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M8.625 11.5H15.3333M8.625 15.3333H13.4167",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/owner-libros-ai-default": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M11.5 1.91667L13.7042 9.29583L21.0833 11.5L13.7042 13.7042L11.5 21.0833L9.29583 13.7042L1.91667 11.5L9.29583 9.29583L11.5 1.91667Z",
+        "stroke": "#52657C",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M18.2083 1.91667V3.83333M18.2083 3.83333V5.75M18.2083 3.83333H16.2917M18.2083 3.83333H20.125",
+        "stroke": "#52657C",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/owner-libros-ai-selected": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M11.5 1.91667L13.7042 9.29583L21.0833 11.5L13.7042 13.7042L11.5 21.0833L9.29583 13.7042L1.91667 11.5L9.29583 9.29583L11.5 1.91667Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M18.2083 1.91667V3.83333M18.2083 3.83333V5.75M18.2083 3.83333H16.2917M18.2083 3.83333H20.125",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.91667,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/role-account-default": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M15.3333 7.66667C15.3333 9.78376 13.6171 11.5 11.5 11.5C9.38291 11.5 7.66667 9.78376 7.66667 7.66667C7.66667 5.54958 9.38291 3.83333 11.5 3.83333C13.6171 3.83333 15.3333 5.54958 15.3333 7.66667Z",
+        "stroke": "#52657C",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M3.83333 20.125C3.83333 16.0042 7.1875 13.4167 11.5 13.4167C15.8125 13.4167 19.1667 16.0042 19.1667 20.125",
+        "stroke": "#52657C",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/role-account-selected": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M15.3333 7.66667C15.3333 9.78376 13.6171 11.5 11.5 11.5C9.38291 11.5 7.66667 9.78376 7.66667 7.66667C7.66667 5.54958 9.38291 3.83333 11.5 3.83333C13.6171 3.83333 15.3333 5.54958 15.3333 7.66667Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M3.83333 20.125C3.83333 16.0042 7.1875 13.4167 11.5 13.4167C15.8125 13.4167 19.1667 16.0042 19.1667 20.125",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/role-expenses-default": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M4.79167 4.79167H18.2083C19.2669 4.79167 20.125 5.64979 20.125 6.70833V18.2083C20.125 19.2669 19.2669 20.125 18.2083 20.125H4.79167C3.73312 20.125 2.875 19.2669 2.875 18.2083V6.70833C2.875 5.64979 3.73312 4.79167 4.79167 4.79167Z",
+        "stroke": "#52657C",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M2.875 9.58333H20.125M15.3333 14.375H17.25",
+        "stroke": "#52657C",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/role-expenses-selected": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M4.79167 4.79167H18.2083C19.2669 4.79167 20.125 5.64979 20.125 6.70833V18.2083C20.125 19.2669 19.2669 20.125 18.2083 20.125H4.79167C3.73312 20.125 2.875 19.2669 2.875 18.2083V6.70833C2.875 5.64979 3.73312 4.79167 4.79167 4.79167Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M2.875 9.58333H20.125M15.3333 14.375H17.25",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/role-overview-default": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M3.83333 2.875H9.58333C10.1126 2.875 10.5417 3.30406 10.5417 3.83333V9.58333C10.5417 10.1126 10.1126 10.5417 9.58333 10.5417H3.83333C3.30406 10.5417 2.875 10.1126 2.875 9.58333V3.83333C2.875 3.30406 3.30406 2.875 3.83333 2.875Z",
+        "stroke": "#52657C",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M13.4167 2.875H19.1667C19.6959 2.875 20.125 3.30406 20.125 3.83333V6.70833C20.125 7.23761 19.6959 7.66667 19.1667 7.66667H13.4167C12.8874 7.66667 12.4583 7.23761 12.4583 6.70833V3.83333C12.4583 3.30406 12.8874 2.875 13.4167 2.875Z",
+        "stroke": "#52657C",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M13.4167 9.58333H19.1667C19.6959 9.58333 20.125 10.0124 20.125 10.5417V19.1667C20.125 19.6959 19.6959 20.125 19.1667 20.125H13.4167C12.8874 20.125 12.4583 19.6959 12.4583 19.1667V10.5417C12.4583 10.0124 12.8874 9.58333 13.4167 9.58333Z",
+        "stroke": "#52657C",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M3.83333 12.4583H9.58333C10.1126 12.4583 10.5417 12.8874 10.5417 13.4167V19.1667C10.5417 19.6959 10.1126 20.125 9.58333 20.125H3.83333C3.30406 20.125 2.875 19.6959 2.875 19.1667V13.4167C2.875 12.8874 3.30406 12.4583 3.83333 12.4583Z",
+        "stroke": "#52657C",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/role-overview-selected": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M3.83333 2.875H9.58333C10.1126 2.875 10.5417 3.30406 10.5417 3.83333V9.58333C10.5417 10.1126 10.1126 10.5417 9.58333 10.5417H3.83333C3.30406 10.5417 2.875 10.1126 2.875 9.58333V3.83333C2.875 3.30406 3.30406 2.875 3.83333 2.875Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M13.4167 2.875H19.1667C19.6959 2.875 20.125 3.30406 20.125 3.83333V6.70833C20.125 7.23761 19.6959 7.66667 19.1667 7.66667H13.4167C12.8874 7.66667 12.4583 7.23761 12.4583 6.70833V3.83333C12.4583 3.30406 12.8874 2.875 13.4167 2.875Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M13.4167 9.58333H19.1667C19.6959 9.58333 20.125 10.0124 20.125 10.5417V19.1667C20.125 19.6959 19.6959 20.125 19.1667 20.125H13.4167C12.8874 20.125 12.4583 19.6959 12.4583 19.1667V10.5417C12.4583 10.0124 12.8874 9.58333 13.4167 9.58333Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      {
+        "d": "M3.83333 12.4583H9.58333C10.1126 12.4583 10.5417 12.8874 10.5417 13.4167V19.1667C10.5417 19.6959 10.1126 20.125 9.58333 20.125H3.83333C3.30406 20.125 2.875 19.6959 2.875 19.1667V13.4167C2.875 12.8874 3.30406 12.4583 3.83333 12.4583Z",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/role-reports-default": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M2.875 19.1667H20.125M5.75 16.2917V8.625H8.625V16.2917M11.5 16.2917V3.83333H14.375V16.2917M17.25 16.2917V10.5417H20.125V16.2917",
+        "stroke": "#52657C",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  },
+  "nav/role-reports-selected": {
+    "width": 23,
+    "height": 23,
+    "viewBox": "0 0 23 23",
+    "paths": [
+      {
+        "d": "M2.875 19.1667H20.125M5.75 16.2917V8.625H8.625V16.2917M11.5 16.2917V3.83333H14.375V16.2917M17.25 16.2917V10.5417H20.125V16.2917",
+        "stroke": "#2459D8",
+        "strokeWidth": 1.82083,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      }
+    ]
+  }
+}

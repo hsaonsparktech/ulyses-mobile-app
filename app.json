@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Libros",
+    "slug": "libros-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "libros",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.librosmobile"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/branding/libros_app_tile_32.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "root": "./app"
+        }
+      ],
+      "expo-secure-store",
+      "expo-localization",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/branding/libros_app_tile_exact_1254.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F6F8FB",
+          "dark": {
+            "backgroundColor": "#0A1422",
+            "image": "./assets/branding/libros_app_tile_exact_1254.png"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "icon": "./assets/branding/libros_app_tile_1024.png"
+  }
+}

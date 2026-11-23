@@ -1,0 +1,111 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: false
+
+# 1. Sign in as Accountant via Development Preview
+- extendedWaitUntil:
+    visible: ".*(Enter your Libros account credentials.|Welcome to Libros|Sign in).*"
+    timeout: 30000
+
+- runFlow:
+    when:
+      visible: "Sign in"
+    commands:
+      - tapOn: "Sign in"
+
+- assertVisible: "Enter your Libros account credentials."
+- scrollUntilVisible:
+    element: "accountant"
+    direction: DOWN
+- tapOn: "accountant"
+- scrollUntilVisible:
+    element: "Continue securely"
+    direction: UP
+- tapOn: "Continue securely"
+
+# 2. Verify Accountant Overview Screen (Figma 41:294)
+- assertVisible: "Libros"
+- assertVisible: "ACCOUNTANT"
+- assertVisible: "Overview"
+- assertVisible: "BUSINESS-SCOPED ACCESS"
+- assertVisible: "Acme Services LLC"
+- assertVisible: "TOTAL INCOME"
+- assertVisible: ".*48,250.*"
+- assertVisible: "TOTAL EXPENSES"
+- assertVisible: ".*19,430.*"
+- assertVisible: "ESTIMATED NET PROFIT"
+- assertVisible: ".*28,820.*"
+
+# 3. Reports & Financials Tab (Figma 41:324)
+- tapOn: "Reports"
+- assertVisible: "Financial Reports"
+- assertVisible: "Profit & Loss Statement"
+- assertVisible: "Gross Revenue"
+- assertVisible: "Gross Profit"
+- assertVisible: "Net Income"
+- assertVisible: "6-Month Financial Trend"
+
+# 4. Toggle Numeric Monthly Breakdown Table (Figma 224:1271)
+- scrollUntilVisible:
+    element: "Show numeric breakdown table"
+    direction: DOWN
+- tapOn: "Show numeric breakdown table"
+- assertVisible: "Hide numeric breakdown table"
+- assertVisible: "Month"
+- assertVisible: "Income"
+- assertVisible: "Expenses"
+- assertVisible: "Net"
+- tapOn: "Hide numeric breakdown table"
+- assertVisible: "Show numeric breakdown table"
+
+# 5. Vendor Spending Modal (Figma 41:365)
+- scrollUntilVisible:
+    element: "View All Vendor Spending"
+    direction: DOWN
+- tapOn: "View All Vendor Spending"
+- assertVisible: "Vendor Spending"
+- assertVisible: "TOTAL VENDOR EXPENDITURES"
+- tapOn: "Close vendor spending modal"
+
+# 6. Export Financial Report (Figma 41:399 & 84:171)
+- scrollUntilVisible:
+    element: "Export"
+    direction: UP
+- tapOn: "Export"
+- assertVisible: "Export Report"
+- assertVisible: "CSV Spreadsheet"
+- tapOn: "CSV Spreadsheet"
+- tapOn: "Generate & Export"
+- assertVisible: "Report Ready"
+- tapOn: "Done"
+
+# 7. Documents Tab (Figma 41:425 & 41:455)
+- tapOn: "Documents"
+- assertVisible: "Documents"
+- assertVisible: "Filter by classification"
+- tapOn: "Statement"
+- tapOn: ".*Q3_2026_Profit_Loss_Statement.*"
+- assertVisible: "Accounting Record"
+- tapOn: "Zoom"
+- tapOn: "Reset"
+- tapOn: "Close document detail"
+
+# 8. Accountant Profile & Scope (Figma 84:205)
+- tapOn: "Account"
+- assertVisible: "Accountant profile"
+- assertVisible: "Acme Services LLC"
+- assertVisible: "Accountant Scope Matrix"
+- assertVisible: "View Financial Statements & Ledgers"
+- scrollUntilVisible:
+    element: "Export Session Audit Log"
+    direction: DOWN
+- tapOn: "Export Session Audit Log"
+- tapOn: "OK"
+
+# 9. Sign Out
+- scrollUntilVisible:
+    element: "Sign Out"
+    direction: DOWN
+- tapOn: "Sign Out"
+- assertVisible: "Enter your Libros account credentials."

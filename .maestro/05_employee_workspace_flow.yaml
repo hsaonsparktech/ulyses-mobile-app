@@ -1,0 +1,83 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: false
+
+# 1. Sign in as Employee via Development Preview
+- extendedWaitUntil:
+    visible: ".*(Welcome to Libros|Sign in).*"
+    timeout: 30000
+- tapOn: "Sign in"
+- assertVisible: "Enter your Libros account credentials."
+- scrollUntilVisible:
+    element: "employee"
+    direction: DOWN
+- tapOn: "employee"
+- scrollUntilVisible:
+    element: "Continue securely"
+    direction: UP
+- tapOn: "Continue securely"
+
+# 2. Verify Employee Workspace Screen (Figma 41:26)
+- assertVisible: "Libros"
+- assertVisible: "EMPLOYEE"
+- assertVisible: "Your workspace"
+- assertVisible: "AUTHORIZED BUSINESS"
+- assertVisible: "Acme Services LLC"
+- assertVisible: "Quick actions"
+- assertVisible: "Upload receipt"
+- assertVisible: "+ New expense draft"
+- assertVisible: "My recent drafts"
+
+# 3. Create Expense Draft (Figma 41:61)
+- tapOn: "+ New expense draft"
+- assertVisible: "Expense draft"
+- assertVisible: "Vendor"
+- assertVisible: "Oak Street Supply"
+- scrollUntilVisible:
+    element: "Save expense draft"
+    direction: DOWN
+- tapOn: "Save expense draft"
+
+# 4. Draft Saved State (Figma 84:72)
+- assertVisible: "Draft submitted"
+- assertVisible: "Expense draft saved"
+- tapOn: "View my activity"
+
+# 5. View Expense History (Figma 41:120)
+- assertVisible: "My Expenses"
+- assertVisible: ".*Oak Street Supply.*"
+- tapOn: ".*Oak Street Supply.*"
+- assertVisible: "Expense Details"
+- tapOn: "Close"
+
+# 6. Documents Tab (Figma 41:152)
+- tapOn: "Documents"
+- assertVisible: "Documents"
+- assertVisible: "Filter by type"
+- tapOn: "Statement"
+- tapOn: "All"
+- tapOn: "+ Upload"
+- tapOn: "OK"
+
+# 7. Access Profile & Elevation Request (Figma 41:184, 84:48, 88:334)
+- tapOn: "Account"
+- assertVisible: "Access profile"
+- assertVisible: "Acme Services LLC"
+- assertVisible: "Your permissions"
+- assertVisible: "Create expense drafts"
+- scrollUntilVisible:
+    element: "Request Elevated Access"
+    direction: DOWN
+- tapOn: "Request Elevated Access"
+- assertVisible: "Request Access"
+- tapOn: "Submit Access Request"
+- assertVisible: "Request Sent to Owner"
+- tapOn: "Return to Access Profile"
+
+# 8. Sign Out
+- scrollUntilVisible:
+    element: "Sign Out"
+    direction: DOWN
+- tapOn: "Sign Out"
+- assertVisible: "Enter your Libros account credentials."

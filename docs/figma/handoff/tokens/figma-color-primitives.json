@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "project": "Libros",
+    "figmaFileKey": "ynTITh3BXCJ5auNZaUEvkk",
+    "figmaFileUrl": "https://www.figma.com/design/ynTITh3BXCJ5auNZaUEvkk/ulyses0930-%7C%7C-AI-Powered-Accounting---Financial-Management-Application",
+    "retrievedAt": "2026-11-15",
+    "source": "Live Figma MCP: figma.variables.getLocalVariableCollectionsAsync/getLocalVariablesAsync; Figma component metadata",
+    "approval": "Official logo approved by client 2026-11-12; brand approval does not imply pricing/localization approval",
+    "collections": [
+      {
+        "name": "LB / Color Primitives",
+        "id": "VariableCollectionId:3:2",
+        "mode": "Value",
+        "modeId": "3:0",
+        "count": 45
+      },
+      {
+        "name": "LB / Semantic Colors",
+        "id": "VariableCollectionId:3:3",
+        "modes": {
+          "Light": "3:1",
+          "Dark": "3:2"
+        },
+        "count": 26
+      },
+      {
+        "name": "LB / Spacing",
+        "id": "VariableCollectionId:3:4",
+        "mode": "Value",
+        "count": 11
+      },
+      {
+        "name": "LB / Radius",
+        "id": "VariableCollectionId:3:5",
+        "mode": "Value",
+        "count": 7
+      }
+    ],
+    "notes": [
+      "All 26 semantic colors are Figma variable aliases resolved against 45 primitive colors.",
+      "All 45 primitives, 26 light/dark semantics, 11 spacings and 7 radii were retrieved.",
+      "Colors are hexadecimal RGB at alpha=1. The scrim tokens are base RGB colors; overlay opacity must be defined in component contexts, not guessed.",
+      "Figma fonts use Inter, but no font binaries are included in this pack.",
+      "Exact appearance SVG embeds original raster; approved editable SVG is not pixel-identical."
+    ]
+  },
+  "colors": {
+    "hex/F6F8FB": "#F6F8FB",
+    "hex/0A1422": "#0A1422",
+    "hex/FFFFFF": "#FFFFFF",
+    "hex/142238": "#142238",
+    "hex/EEF3FA": "#EEF3FA",
+    "hex/1C2D46": "#1C2D46",
+    "hex/20314B": "#20314B",
+    "hex/13243C": "#13243C",
+    "hex/F4F7FC": "#F4F7FC",
+    "hex/52657C": "#52657C",
+    "hex/CAD6E7": "#CAD6E7",
+    "hex/64748B": "#64748B",
+    "hex/A8B8CA": "#A8B8CA",
+    "hex/DCE4EE": "#DCE4EE",
+    "hex/394B63": "#394B63",
+    "hex/B8C7D8": "#B8C7D8",
+    "hex/5B6F8C": "#5B6F8C",
+    "hex/2459D8": "#2459D8",
+    "hex/83A9FF": "#83A9FF",
+    "hex/1846B4": "#1846B4",
+    "hex/A7C1FF": "#A7C1FF",
+    "hex/EAF1FF": "#EAF1FF",
+    "hex/263E66": "#263E66",
+    "hex/08172B": "#08172B",
+    "hex/087E72": "#087E72",
+    "hex/56D4BB": "#56D4BB",
+    "hex/E5F5F1": "#E5F5F1",
+    "hex/1C4B49": "#1C4B49",
+    "hex/062623": "#062623",
+    "hex/137754": "#137754",
+    "hex/70D7A1": "#70D7A1",
+    "hex/E5F6ED": "#E5F6ED",
+    "hex/1F473C": "#1F473C",
+    "hex/BC3C48": "#BC3C48",
+    "hex/FF9BA7": "#FF9BA7",
+    "hex/FDECEF": "#FDECEF",
+    "hex/56313F": "#56313F",
+    "hex/8A5700": "#8A5700",
+    "hex/FFC870": "#FFC870",
+    "hex/FFF2D7": "#FFF2D7",
+    "hex/55432B": "#55432B",
+    "hex/91B7FF": "#91B7FF",
+    "hex/243D67": "#243D67",
+    "hex/B4D0FF": "#B4D0FF",
+    "hex/030812": "#030812"
+  }
+}

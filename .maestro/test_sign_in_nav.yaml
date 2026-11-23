@@ -1,0 +1,8 @@
+appId: com.anonymous.librosmobile
+---
+- assertVisible: "Sign in"
+- tapOn: "Sign in"
+- extendedWaitUntil:
+    visible: "Continue securely"
+    timeout: 15000
+- assertVisible: "Continue securely"

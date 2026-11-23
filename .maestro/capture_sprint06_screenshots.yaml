@@ -1,0 +1,97 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: false
+
+# Authenticate if needed
+- runFlow:
+    when:
+      visible: "Continue securely"
+    commands:
+      - tapOn: "Continue securely"
+
+- runFlow:
+    when:
+      visible: "Sign in"
+    commands:
+      - tapOn: "Sign in"
+      - tapOn: "Continue securely"
+
+- extendedWaitUntil:
+    visible: "Financial overview"
+    timeout: 10000
+
+# Open Settings
+- tapOn: "Business settings"
+- extendedWaitUntil:
+    visible: "Business Settings"
+    timeout: 5000
+
+# Capture Settings with Membership entry
+- scrollUntilVisible:
+    element: "Membership & Subscription"
+    direction: DOWN
+    timeout: 5000
+
+- takeScreenshot: docs/qa/screenshots/98_sprint06_settings_membership_entry
+
+# Open Subscription Modal (37:911)
+- tapOn: "Membership & Subscription"
+- extendedWaitUntil:
+    visible: "Subscription"
+    timeout: 5000
+
+- takeScreenshot: docs/qa/screenshots/93_sprint06_owner_subscription
+
+# Open Manage Plan Modal (81:1174)
+- tapOn: "Manage plan"
+- extendedWaitUntil:
+    visible: "Manage plan"
+    timeout: 5000
+
+- takeScreenshot: docs/qa/screenshots/94_sprint06_owner_manage_plan
+
+# Open Cancel Subscription Modal (81:1218)
+- tapOn: "Cancel subscription"
+- extendedWaitUntil:
+    visible: "Cancel subscription"
+    timeout: 5000
+
+- takeScreenshot: docs/qa/screenshots/95_sprint06_owner_cancel_subscription
+
+# Open Full Data Export Modal (86:596)
+- tapOn: "Export data"
+- extendedWaitUntil:
+    visible: "Export your data"
+    timeout: 5000
+
+- takeScreenshot: docs/qa/screenshots/96_sprint06_owner_full_data_export
+
+# Prepare export to show ready state
+- tapOn: "Prepare full export"
+- extendedWaitUntil:
+    visible: "Export Complete|OK|Export Bundle Ready"
+    timeout: 8000
+
+- runFlow:
+    when:
+      visible: "OK"
+    commands:
+      - tapOn: "OK"
+
+- takeScreenshot: docs/qa/screenshots/97_sprint06_export_ready_state
+
+# Clean dismiss
+- tapOn: "Back to reports"
+- tapOn: "Review terms"
+- tapOn: "Change billing cycle"
+- runFlow:
+    when:
+      visible: "OK"
+    commands:
+      - tapOn: "OK"
+- tapOn: "Close"
+- tapOn: "Close settings"
+- extendedWaitUntil:
+    visible: "Financial overview"
+    timeout: 5000

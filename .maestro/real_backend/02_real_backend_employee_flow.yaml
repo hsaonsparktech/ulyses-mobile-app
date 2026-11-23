@@ -1,0 +1,22 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: true
+
+# 1. Navigate to Sign In Screen
+- tapOn: "Sign in"
+- assertVisible: "Email address"
+- assertVisible: "Password"
+
+# 2. Enter Real Seed Employee Credentials
+- tapOn: "Email address"
+- inputText: "employee@acmeservices.com"
+- tapOn: "Password"
+- inputText: "EmployeePassword123!"
+
+# 3. Sign in securely against live backend
+- tapOn: "Continue securely"
+
+# 4. Verify Redirection to Employee Experience
+- assertVisible: ".*Employee.*"
+- assertVisible: "My Expenses"

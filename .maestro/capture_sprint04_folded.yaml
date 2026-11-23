@@ -1,0 +1,150 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: false
+
+# Authenticate if needed
+- runFlow:
+    when:
+      visible: "Continue securely"
+    commands:
+      - tapOn: "Continue securely"
+
+- runFlow:
+    when:
+      visible: "Sign in"
+    commands:
+      - tapOn: "Sign in"
+      - tapOn: "Continue securely"
+
+- extendedWaitUntil:
+    visible: "Financial overview"
+    timeout: 10000
+
+# 1. Documents Hub
+- tapOn: "Documents"
+- extendedWaitUntil:
+    visible: ".*Active Files.*|.*Documents.*"
+    timeout: 5000
+- takeScreenshot: 60_sprint04_documents_hub
+
+# 2. Receipts Folder
+- tapOn: "Receipts"
+- extendedWaitUntil:
+    visible: ".*Receipts.*"
+    timeout: 3000
+- takeScreenshot: 61_sprint04_folder_receipts
+- tapOn: "Back to documents"
+
+# 3. Smart Scan Modal
+- tapOn: "Scan"
+- extendedWaitUntil:
+    visible: "Smart Scan"
+    timeout: 5000
+- takeScreenshot: 62_sprint04_smart_scan_source
+
+# 4. AI Extraction Review
+- tapOn: "Take Photo"
+- extendedWaitUntil:
+    visible: "Review Extracted Scan"
+    timeout: 10000
+- takeScreenshot: 63_sprint04_ai_extraction_review
+
+# 5. Receipt OCR Zoom
+- tapOn: "Inspect OCR"
+- extendedWaitUntil:
+    visible: "Receipt OCR Inspector"
+    timeout: 5000
+- takeScreenshot: 64_sprint04_receipt_ocr_zoom
+
+- tapOn: "Back to Review Form"
+- extendedWaitUntil:
+    visible: "Review Extracted Scan"
+    timeout: 3000
+
+- tapOn: "Close scan review"
+
+# 6. Document Calendar
+- tapOn: "Open document calendar"
+- extendedWaitUntil:
+    visible: ".*November 2026.*|.*Document calendar.*"
+    timeout: 5000
+- takeScreenshot: 65_sprint04_document_calendar
+- tapOn: "Back to documents"
+
+# 7. Document Archive
+- tapOn: "Open document archive"
+- extendedWaitUntil:
+    visible: "Archived Documents"
+    timeout: 3000
+- takeScreenshot: 66_sprint04_document_archive
+- tapOn: "Close archived documents"
+
+# 8. Libros AI Chat
+- tapOn: "Libros AI"
+- extendedWaitUntil:
+    visible: ".*Financial Co-pilot.*"
+    timeout: 5000
+- tapOn: "Top vendor expenses this month"
+- extendedWaitUntil:
+    visible: ".*Top 3 Vendor Expenses.*"
+    timeout: 6000
+- takeScreenshot: 67_sprint04_libros_ai_chat
+
+# 9. Return to Home & Notifications Center
+- tapOn: "Home"
+- extendedWaitUntil:
+    visible: "Financial overview"
+    timeout: 5000
+
+- tapOn: "Notifications"
+- extendedWaitUntil:
+    visible: "Notifications"
+    timeout: 3000
+- takeScreenshot: 68_sprint04_notifications_center
+- tapOn: "Close notifications"
+
+# 10. Business Settings
+- tapOn: "Business settings"
+- extendedWaitUntil:
+    visible: "Business Settings"
+    timeout: 3000
+- takeScreenshot: 69_sprint04_business_settings
+
+# 11. Team Access
+- tapOn: "Team Access & Roles"
+- extendedWaitUntil:
+    visible: "Team Access"
+    timeout: 3000
+- takeScreenshot: 70_sprint04_team_access
+
+# 12. Role Permissions
+- tapOn: "Permissions"
+- extendedWaitUntil:
+    visible: "Role Permissions"
+    timeout: 3000
+- takeScreenshot: 71_sprint04_role_permissions
+- tapOn: "Close role permissions"
+
+# 13. Invite Member
+- tapOn: "Invite Member"
+- extendedWaitUntil:
+    visible: "Invite Team Member"
+    timeout: 3000
+- takeScreenshot: 72_sprint04_invite_member
+- tapOn: "Close invite modal"
+- tapOn: "Close team modal"
+
+# 14. Account Profile
+- tapOn: "Account Profile & Security"
+- extendedWaitUntil:
+    visible: "Account Profile"
+    timeout: 3000
+- takeScreenshot: 73_sprint04_account_profile
+- tapOn: "Close profile"
+- tapOn: "Close settings"
+
+# Return to Dashboard
+- extendedWaitUntil:
+    visible: "Financial overview"
+    timeout: 3000

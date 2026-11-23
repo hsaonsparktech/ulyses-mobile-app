@@ -1,0 +1,98 @@
+group,name,mode,value,source_reference
+primitive,hex/F6F8FB,Value,#F6F8FB,LB / Color Primitives
+primitive,hex/0A1422,Value,#0A1422,LB / Color Primitives
+primitive,hex/FFFFFF,Value,#FFFFFF,LB / Color Primitives
+primitive,hex/142238,Value,#142238,LB / Color Primitives
+primitive,hex/EEF3FA,Value,#EEF3FA,LB / Color Primitives
+primitive,hex/1C2D46,Value,#1C2D46,LB / Color Primitives
+primitive,hex/20314B,Value,#20314B,LB / Color Primitives
+primitive,hex/13243C,Value,#13243C,LB / Color Primitives
+primitive,hex/F4F7FC,Value,#F4F7FC,LB / Color Primitives
+primitive,hex/52657C,Value,#52657C,LB / Color Primitives
+primitive,hex/CAD6E7,Value,#CAD6E7,LB / Color Primitives
+primitive,hex/64748B,Value,#64748B,LB / Color Primitives
+primitive,hex/A8B8CA,Value,#A8B8CA,LB / Color Primitives
+primitive,hex/DCE4EE,Value,#DCE4EE,LB / Color Primitives
+primitive,hex/394B63,Value,#394B63,LB / Color Primitives
+primitive,hex/B8C7D8,Value,#B8C7D8,LB / Color Primitives
+primitive,hex/5B6F8C,Value,#5B6F8C,LB / Color Primitives
+primitive,hex/2459D8,Value,#2459D8,LB / Color Primitives
+primitive,hex/83A9FF,Value,#83A9FF,LB / Color Primitives
+primitive,hex/1846B4,Value,#1846B4,LB / Color Primitives
+primitive,hex/A7C1FF,Value,#A7C1FF,LB / Color Primitives
+primitive,hex/EAF1FF,Value,#EAF1FF,LB / Color Primitives
+primitive,hex/263E66,Value,#263E66,LB / Color Primitives
+primitive,hex/08172B,Value,#08172B,LB / Color Primitives
+primitive,hex/087E72,Value,#087E72,LB / Color Primitives
+primitive,hex/56D4BB,Value,#56D4BB,LB / Color Primitives
+primitive,hex/E5F5F1,Value,#E5F5F1,LB / Color Primitives
+primitive,hex/1C4B49,Value,#1C4B49,LB / Color Primitives
+primitive,hex/062623,Value,#062623,LB / Color Primitives
+primitive,hex/137754,Value,#137754,LB / Color Primitives
+primitive,hex/70D7A1,Value,#70D7A1,LB / Color Primitives
+primitive,hex/E5F6ED,Value,#E5F6ED,LB / Color Primitives
+primitive,hex/1F473C,Value,#1F473C,LB / Color Primitives
+primitive,hex/BC3C48,Value,#BC3C48,LB / Color Primitives
+primitive,hex/FF9BA7,Value,#FF9BA7,LB / Color Primitives
+primitive,hex/FDECEF,Value,#FDECEF,LB / Color Primitives
+primitive,hex/56313F,Value,#56313F,LB / Color Primitives
+primitive,hex/8A5700,Value,#8A5700,LB / Color Primitives
+primitive,hex/FFC870,Value,#FFC870,LB / Color Primitives
+primitive,hex/FFF2D7,Value,#FFF2D7,LB / Color Primitives
+primitive,hex/55432B,Value,#55432B,LB / Color Primitives
+primitive,hex/91B7FF,Value,#91B7FF,LB / Color Primitives
+primitive,hex/243D67,Value,#243D67,LB / Color Primitives
+primitive,hex/B4D0FF,Value,#B4D0FF,LB / Color Primitives
+primitive,hex/030812,Value,#030812,LB / Color Primitives
+semantic,color/canvas,Light,#F6F8FB,hex/F6F8FB
+semantic,color/canvas,Dark,#0A1422,hex/0A1422
+semantic,color/surface,Light,#FFFFFF,hex/FFFFFF
+semantic,color/surface,Dark,#142238,hex/142238
+semantic,color/surfaceAlt,Light,#EEF3FA,hex/EEF3FA
+semantic,color/surfaceAlt,Dark,#1C2D46,hex/1C2D46
+semantic,color/surfaceRaised,Light,#FFFFFF,hex/FFFFFF
+semantic,color/surfaceRaised,Dark,#20314B,hex/20314B
+semantic,color/text,Light,#13243C,hex/13243C
+semantic,color/text,Dark,#F4F7FC,hex/F4F7FC
+semantic,color/muted,Light,#52657C,hex/52657C
+semantic,color/muted,Dark,#CAD6E7,hex/CAD6E7
+semantic,color/tertiary,Light,#64748B,hex/64748B
+semantic,color/tertiary,Dark,#A8B8CA,hex/A8B8CA
+semantic,color/border,Light,#DCE4EE,hex/DCE4EE
+semantic,color/border,Dark,#394B63,hex/394B63
+semantic,color/borderStrong,Light,#B8C7D8,hex/B8C7D8
+semantic,color/borderStrong,Dark,#5B6F8C,hex/5B6F8C
+semantic,color/primary,Light,#2459D8,hex/2459D8
+semantic,color/primary,Dark,#83A9FF,hex/83A9FF
+semantic,color/primaryHover,Light,#1846B4,hex/1846B4
+semantic,color/primaryHover,Dark,#A7C1FF,hex/A7C1FF
+semantic,color/primarySoft,Light,#EAF1FF,hex/EAF1FF
+semantic,color/primarySoft,Dark,#263E66,hex/263E66
+semantic,color/primaryOn,Light,#FFFFFF,hex/FFFFFF
+semantic,color/primaryOn,Dark,#08172B,hex/08172B
+semantic,color/accent,Light,#087E72,hex/087E72
+semantic,color/accent,Dark,#56D4BB,hex/56D4BB
+semantic,color/accentSoft,Light,#E5F5F1,hex/E5F5F1
+semantic,color/accentSoft,Dark,#1C4B49,hex/1C4B49
+semantic,color/accentOn,Light,#FFFFFF,hex/FFFFFF
+semantic,color/accentOn,Dark,#062623,hex/062623
+semantic,color/positive,Light,#137754,hex/137754
+semantic,color/positive,Dark,#70D7A1,hex/70D7A1
+semantic,color/positiveSoft,Light,#E5F6ED,hex/E5F6ED
+semantic,color/positiveSoft,Dark,#1F473C,hex/1F473C
+semantic,color/negative,Light,#BC3C48,hex/BC3C48
+semantic,color/negative,Dark,#FF9BA7,hex/FF9BA7
+semantic,color/negativeSoft,Light,#FDECEF,hex/FDECEF
+semantic,color/negativeSoft,Dark,#56313F,hex/56313F
+semantic,color/warning,Light,#8A5700,hex/8A5700
+semantic,color/warning,Dark,#FFC870,hex/FFC870
+semantic,color/warningSoft,Light,#FFF2D7,hex/FFF2D7
+semantic,color/warningSoft,Dark,#55432B,hex/55432B
+semantic,color/info,Light,#2459D8,hex/2459D8
+semantic,color/info,Dark,#91B7FF,hex/91B7FF
+semantic,color/infoSoft,Light,#EAF1FF,hex/EAF1FF
+semantic,color/infoSoft,Dark,#243D67,hex/243D67
+semantic,color/focus,Light,#2459D8,hex/2459D8
+semantic,color/focus,Dark,#B4D0FF,hex/B4D0FF
+semantic,color/scrim,Light,#13243C,hex/13243C
+semantic,color/scrim,Dark,#030812,hex/030812

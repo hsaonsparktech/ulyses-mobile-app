@@ -1,0 +1,236 @@
+{
+  "source": "Figma ynTITh3BXCJ5auNZaUEvkk / Live MCP get_design_context",
+  "retrievedAt": "2026-11-17",
+  "scope": "Sprint 00B — Official Icons & Shared Navigation",
+  "totalAssets": 33,
+  "collections": {
+    "feedback": {
+      "figmaNodes": "379:101 - 379:115",
+      "icons": [
+        {
+          "name": "success",
+          "nodeId": "379:101",
+          "file": "assets/icons/feedback/success.svg",
+          "size": "24x24",
+          "color": "#137754 (positive)"
+        },
+        {
+          "name": "warning",
+          "nodeId": "379:106",
+          "file": "assets/icons/feedback/warning.svg",
+          "size": "24x24",
+          "color": "#BC3C48 (negative)"
+        },
+        {
+          "name": "information",
+          "nodeId": "379:111",
+          "file": "assets/icons/feedback/information.svg",
+          "size": "24x24",
+          "color": "#2459D8 (primary)"
+        },
+        {
+          "name": "processing",
+          "nodeId": "379:115",
+          "file": "assets/icons/feedback/processing.svg",
+          "size": "24x24",
+          "color": "#2459D8 (primary)"
+        }
+      ]
+    },
+    "utility": {
+      "figmaNodes": "381:1680 - 406:135, 6:33",
+      "icons": [
+        {
+          "name": "chevron-down",
+          "nodeId": "381:1680",
+          "file": "assets/icons/utility/chevron-down.svg",
+          "size": "24x24",
+          "color": "#52657C (muted)"
+        },
+        {
+          "name": "chevron-left",
+          "nodeId": "381:1683",
+          "file": "assets/icons/utility/chevron-left.svg",
+          "size": "24x24",
+          "color": "#2459D8 (primary)"
+        },
+        {
+          "name": "chevron-right",
+          "nodeId": "381:1686",
+          "file": "assets/icons/utility/chevron-right.svg",
+          "size": "24x24",
+          "color": "#2459D8 (primary)"
+        },
+        {
+          "name": "add",
+          "nodeId": "381:1690",
+          "file": "assets/icons/utility/add.svg",
+          "size": "24x24",
+          "color": "#2459D8 (primary)"
+        },
+        {
+          "name": "selection-check",
+          "nodeId": "406:135",
+          "file": "assets/icons/utility/selection-check.svg",
+          "size": "14x18",
+          "color": "#FFFFFF"
+        },
+        {
+          "name": "transaction-expense",
+          "nodeId": "167:93",
+          "file": "assets/icons/utility/transaction-expense.svg",
+          "size": "22x22",
+          "color": "#13243C (text)"
+        },
+        {
+          "name": "transaction-income",
+          "nodeId": "167:96",
+          "file": "assets/icons/utility/transaction-income.svg",
+          "size": "22x22",
+          "color": "#137754 (positive)"
+        },
+        {
+          "name": "bell",
+          "nodeId": "168:892",
+          "file": "assets/icons/utility/bell.svg",
+          "size": "20x20",
+          "color": "#2459D8 (primary)"
+        },
+        {
+          "name": "scan",
+          "nodeId": "168:878",
+          "file": "assets/icons/utility/scan.svg",
+          "size": "19x19",
+          "color": "#2459D8 (primary)"
+        },
+        {
+          "name": "invoice",
+          "nodeId": "168:881",
+          "file": "assets/icons/utility/invoice.svg",
+          "size": "19x19",
+          "color": "#2459D8 (primary)"
+        },
+        {
+          "name": "reports",
+          "nodeId": "168:883",
+          "file": "assets/icons/utility/reports.svg",
+          "size": "19x19",
+          "color": "#2459D8 (primary)"
+        }
+      ]
+    },
+    "nav": {
+      "figmaNodes": "6:119 (Owner), 182:155 (Employee/Accountant)",
+      "icons": [
+        {
+          "name": "owner-home-selected",
+          "nodeId": "159:35",
+          "file": "assets/icons/nav/owner-home-selected.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "owner-home-default",
+          "nodeId": "160:38",
+          "file": "assets/icons/nav/owner-home-default.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "owner-activity-selected",
+          "nodeId": "160:41",
+          "file": "assets/icons/nav/owner-activity-selected.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "owner-activity-default",
+          "nodeId": "160:44",
+          "file": "assets/icons/nav/owner-activity-default.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "owner-invoices-selected",
+          "nodeId": "160:47",
+          "file": "assets/icons/nav/owner-invoices-selected.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "owner-invoices-default",
+          "nodeId": "160:51",
+          "file": "assets/icons/nav/owner-invoices-default.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "owner-documents-selected",
+          "nodeId": "160:55",
+          "file": "assets/icons/nav/owner-documents-selected.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "owner-documents-default",
+          "nodeId": "160:58",
+          "file": "assets/icons/nav/owner-documents-default.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "owner-libros-ai-selected",
+          "nodeId": "160:61",
+          "file": "assets/icons/nav/owner-libros-ai-selected.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "owner-libros-ai-default",
+          "nodeId": "160:64",
+          "file": "assets/icons/nav/owner-libros-ai-default.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "role-expenses-selected",
+          "nodeId": "182:114",
+          "file": "assets/icons/nav/role-expenses-selected.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "role-expenses-default",
+          "nodeId": "182:118",
+          "file": "assets/icons/nav/role-expenses-default.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "role-overview-selected",
+          "nodeId": "182:122",
+          "file": "assets/icons/nav/role-overview-selected.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "role-overview-default",
+          "nodeId": "182:128",
+          "file": "assets/icons/nav/role-overview-default.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "role-reports-selected",
+          "nodeId": "182:134",
+          "file": "assets/icons/nav/role-reports-selected.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "role-reports-default",
+          "nodeId": "182:137",
+          "file": "assets/icons/nav/role-reports-default.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "role-account-selected",
+          "nodeId": "182:148",
+          "file": "assets/icons/nav/role-account-selected.svg",
+          "size": "23x23"
+        },
+        {
+          "name": "role-account-default",
+          "nodeId": "182:152",
+          "file": "assets/icons/nav/role-account-default.svg",
+          "size": "23x23"
+        }
+      ]
+    }
+  }
+}

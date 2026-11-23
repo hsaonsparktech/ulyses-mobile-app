@@ -1,0 +1,37 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: false
+
+- extendedWaitUntil:
+    visible: "Sign in"
+    timeout: 30000
+
+# 1. Verify Welcome Screen elements
+- assertVisible: "Welcome to Libros"
+- assertVisible: "Sign in"
+
+# 2. Navigate to Sign In Screen
+- tapOn: "Sign in"
+
+- extendedWaitUntil:
+    visible: "Continue securely"
+    timeout: 15000
+
+- assertVisible: "Email address"
+- assertVisible: "Password"
+
+# 3. Enter Real Seed Owner Credentials
+- tapOn: "Enter your email"
+- inputText: "owner@acmeservices.com"
+- tapOn: "Enter password"
+- inputText: "OwnerPassword123!"
+
+# 4. Sign in securely against live backend on port 3000
+- tapOn: "Continue securely"
+
+# 5. Verify Successful Authentication into Owner Workspace
+- extendedWaitUntil:
+    visible: ".*Acme Services.*"
+    timeout: 15000
+- assertVisible: ".*Acme Services.*"

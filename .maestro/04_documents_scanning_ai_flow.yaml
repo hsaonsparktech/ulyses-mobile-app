@@ -1,0 +1,159 @@
+appId: com.anonymous.librosmobile
+---
+# 04_documents_scanning_ai_flow.yaml - Sprint 04 Physical Device E2E Verification
+# Tests Documents Hub, Calendar, Archive, Smart Scanning, OCR Zoom, Libros AI, Team, Notifications & Settings
+
+- launchApp:
+    clearState: true
+
+# Authenticate as Business Owner
+- extendedWaitUntil:
+    visible: "Sign in"
+    timeout: 30000
+
+- tapOn: "Sign in"
+- extendedWaitUntil:
+    visible: "Continue securely"
+    timeout: 10000
+- tapOn: "Continue securely"
+
+- extendedWaitUntil:
+    visible: "Financial overview"
+    timeout: 10000
+
+# 1. Navigate to Documents Hub via bottom tab
+- tapOn: "Documents"
+- extendedWaitUntil:
+    visible: ".*Active Files.*|.*Documents.*"
+    timeout: 5000
+
+# 2. Test Smart Scanning Flow
+- tapOn: "Scan"
+- extendedWaitUntil:
+    visible: "Smart Scan"
+    timeout: 5000
+
+# Tap on Take Photo to start OCR scan
+- tapOn: "Take Photo"
+- extendedWaitUntil:
+    visible: ".*(Review Extracted Scan|Extracted Transaction Fields).*"
+    timeout: 10000
+
+# 3. Test OCR Zoom Inspector
+- tapOn: "Inspect OCR"
+- extendedWaitUntil:
+    visible: "Receipt OCR Inspector"
+    timeout: 5000
+
+- runFlow:
+    when:
+      visible: "Close receipt zoom"
+    commands:
+      - tapOn: "Close receipt zoom"
+- runFlow:
+    when:
+      visible: "Receipt OCR Inspector"
+    commands:
+      - back
+
+- extendedWaitUntil:
+    visible: ".*(Review Extracted Scan|Extracted Transaction Fields).*"
+    timeout: 5000
+
+# 4. Confirm Extracted Document into records
+- scrollUntilVisible:
+    element: "Confirm & Save to Records"
+    direction: DOWN
+    timeout: 5000
+- tapOn: "Confirm & Save to Records"
+- extendedWaitUntil:
+    visible: "OK"
+    timeout: 5000
+- tapOn: "OK"
+
+# 5. Test Folders & Filters on Documents Hub
+- extendedWaitUntil:
+    visible: "Receipts"
+    timeout: 5000
+- tapOn: "Receipts"
+- extendedWaitUntil:
+    visible: ".*Receipts.*"
+    timeout: 3000
+- tapOn: "Back to documents"
+
+# Test Statements folder
+- tapOn: "Statements"
+- extendedWaitUntil:
+    visible: ".*Statements.*"
+    timeout: 3000
+- tapOn: "Back to documents"
+
+# 6. Test Document Calendar from Documents Header
+- tapOn: "Open document calendar"
+- extendedWaitUntil:
+    visible: ".*November 2026.*|.*Document calendar.*"
+    timeout: 5000
+
+- tapOn: "Back to documents"
+
+# 7. Test Document Archive
+- tapOn: "Open document archive"
+- extendedWaitUntil:
+    visible: "Archived Documents"
+    timeout: 3000
+
+- tapOn: "Close archived documents"
+
+# 8. Navigate to Libros AI Assistant Tab
+- tapOn: "Libros AI"
+- extendedWaitUntil:
+    visible: ".*Financial Co-pilot.*"
+    timeout: 5000
+
+# Tap suggestion chip
+- tapOn: "Top vendor expenses this month"
+- extendedWaitUntil:
+    visible: ".*Top 3 Vendor Expenses.*"
+    timeout: 6000
+
+# 9. Return to Home Dashboard & Test Notifications
+- tapOn: "Home"
+- extendedWaitUntil:
+    visible: "Financial overview"
+    timeout: 5000
+
+# Open notifications modal
+- tapOn: "Notifications"
+- extendedWaitUntil:
+    visible: "Notifications"
+    timeout: 3000
+
+- tapOn: "Mark all as read"
+- tapOn: "Close notifications"
+
+# 10. Open Business Settings & Team Access
+- tapOn: "Business settings"
+- extendedWaitUntil:
+    visible: "Business Settings"
+    timeout: 3000
+
+# Open Team Access from settings
+- tapOn: "Team Access & Roles"
+- extendedWaitUntil:
+    visible: "Team Access"
+    timeout: 3000
+
+# Open Granular Role Permissions
+- tapOn: "Permissions"
+- extendedWaitUntil:
+    visible: "Role Permissions"
+    timeout: 3000
+
+- tapOn: "Close role permissions"
+- tapOn: "Close team modal"
+- tapOn: "Close settings"
+
+# 11. Final Return to Dashboard
+- extendedWaitUntil:
+    visible: "Financial overview"
+    timeout: 3000

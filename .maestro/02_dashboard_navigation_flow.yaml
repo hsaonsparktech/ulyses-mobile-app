@@ -1,0 +1,56 @@
+appId: com.anonymous.librosmobile
+---
+- launchApp:
+    clearState: false
+
+- extendedWaitUntil:
+    visible: "Welcome to Libros|Financial overview"
+    timeout: 10000
+
+# 1. Authenticate if on Welcome screen
+- runFlow:
+    when:
+      visible: "Welcome to Libros"
+    commands:
+      - tapOn: "Sign in"
+      - assertVisible: "Continue securely"
+      - tapOn: "Continue securely"
+
+# 2. Verify Dashboard rendered on Home
+- assertVisible: "Financial overview"
+- assertVisible: "Estimated profit"
+- assertVisible: "Income"
+- assertVisible: "Expenses"
+
+# 3. Test Business Switcher modal
+- tapOn: ".*Acme Services.*"
+- assertVisible: "Active business"
+- assertVisible: "Acme Retail Co"
+- tapOn: "Acme Retail Co"
+
+# 4. Verify business switch completed and financial records refreshed
+- assertVisible: "Acme Retail Co"
+
+# 5. Switch back to primary business
+- tapOn: "Acme Retail Co"
+- tapOn: "Acme Services LLC"
+- assertVisible: "Acme Services LLC"
+
+# 6. Test Navigation to Invoices Tab
+- tapOn: "Invoices"
+- assertVisible: "Invoices"
+- assertVisible: "Create invoice"
+
+# 7. Test Navigation to Reports via Quick Actions from Home
+- tapOn: "Home"
+- tapOn: "View reports"
+- assertVisible: "Financial reports"
+- back
+
+# 8. Test Navigation to Activity Tab
+- tapOn: "Activity"
+- assertVisible: "Income and expenses for this business"
+
+# 9. Return to Home
+- tapOn: "Home"
+- assertVisible: "Financial overview"

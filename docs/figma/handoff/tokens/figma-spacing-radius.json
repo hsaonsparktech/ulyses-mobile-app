@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "project": "Libros",
+    "figmaFileKey": "ynTITh3BXCJ5auNZaUEvkk",
+    "figmaFileUrl": "https://www.figma.com/design/ynTITh3BXCJ5auNZaUEvkk/ulyses0930-%7C%7C-AI-Powered-Accounting---Financial-Management-Application",
+    "retrievedAt": "2026-11-15",
+    "source": "Live Figma MCP: figma.variables.getLocalVariableCollectionsAsync/getLocalVariablesAsync; Figma component metadata",
+    "approval": "Official logo approved by client 2026-11-12; brand approval does not imply pricing/localization approval",
+    "collections": [
+      {
+        "name": "LB / Color Primitives",
+        "id": "VariableCollectionId:3:2",
+        "mode": "Value",
+        "modeId": "3:0",
+        "count": 45
+      },
+      {
+        "name": "LB / Semantic Colors",
+        "id": "VariableCollectionId:3:3",
+        "modes": {
+          "Light": "3:1",
+          "Dark": "3:2"
+        },
+        "count": 26
+      },
+      {
+        "name": "LB / Spacing",
+        "id": "VariableCollectionId:3:4",
+        "mode": "Value",
+        "count": 11
+      },
+      {
+        "name": "LB / Radius",
+        "id": "VariableCollectionId:3:5",
+        "mode": "Value",
+        "count": 7
+      }
+    ],
+    "notes": [
+      "All 26 semantic colors are Figma variable aliases resolved against 45 primitive colors.",
+      "All 45 primitives, 26 light/dark semantics, 11 spacings and 7 radii were retrieved.",
+      "Colors are hexadecimal RGB at alpha=1. The scrim tokens are base RGB colors; overlay opacity must be defined in component contexts, not guessed.",
+      "Figma fonts use Inter, but no font binaries are included in this pack.",
+      "Exact appearance SVG embeds original raster; approved editable SVG is not pixel-identical."
+    ]
+  },
+  "spacing": {
+    "0": 0,
+    "1": 4,
+    "2": 8,
+    "3": 12,
+    "4": 16,
+    "5": 20,
+    "6": 24,
+    "8": 32,
+    "10": 40,
+    "12": 48,
+    "16": 64
+  },
+  "radius": {
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 20,
+    "2xl": 24,
+    "pill": 999
+  }
+}

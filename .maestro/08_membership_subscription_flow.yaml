@@ -1,0 +1,137 @@
+appId: com.anonymous.librosmobile
+---
+# 08_membership_subscription_flow.yaml - Sprint 06 Membership & Data Export E2E
+# Tests Subscription status (37:911), Manage plan (81:1174), Cancel subscription preview (81:1218), Full data export (86:596)
+
+- launchApp:
+    clearState: true
+
+# Authenticate as Business Owner
+- extendedWaitUntil:
+    visible: ".*(Welcome to Libros|Sign in).*"
+    timeout: 60000
+
+- tapOn: "Sign in"
+- extendedWaitUntil:
+    visible: "Continue securely"
+    timeout: 10000
+- tapOn: "Continue securely"
+
+- extendedWaitUntil:
+    visible: "Financial overview"
+    timeout: 10000
+
+# 1. Open Business Settings
+- tapOn: "Business settings"
+- extendedWaitUntil:
+    visible: "Business Settings"
+    timeout: 5000
+
+# 2. Open Membership & Subscription (Figma 37:911)
+- scrollUntilVisible:
+    element: "Membership & Subscription"
+    direction: DOWN
+    timeout: 5000
+
+- tapOn: "Membership & Subscription"
+- extendedWaitUntil:
+    visible: "Subscription"
+    timeout: 5000
+
+# Verify Subscription elements (Figma 37:911)
+- assertVisible: "Active plan and renewal settings"
+- assertVisible: ".*Pro plan.*"
+- assertVisible: "ACTIVE"
+- assertVisible: "Data Retention & Export"
+
+# 3. Open Manage Plan (Figma 81:1174)
+- tapOn: "Manage plan"
+- extendedWaitUntil:
+    visible: "Manage plan"
+    timeout: 5000
+
+# Verify Manage Plan elements (Figma 81:1174)
+- assertVisible: "Choose annual billing or update your subscription"
+- assertVisible: "Annual plan · save $40/yr"
+- assertVisible: "Monthly plan"
+- assertVisible: "Multi-business plan"
+- assertVisible: "Next billing date"
+
+# Select Annual Plan
+- tapOn: "Annual plan · save $40/yr"
+
+# 4. Open Cancel Subscription Modal (Figma 81:1218)
+- tapOn: "Cancel subscription"
+- extendedWaitUntil:
+    visible: "Cancel subscription"
+    timeout: 5000
+
+# Verify Cancel Subscription elements (Figma 81:1218)
+- assertVisible: "CANCELLATION · PREVIEW"
+- assertVisible: "Cancel anytime · no refunds"
+- assertVisible: "Read-only data"
+- assertVisible: "60–90 days"
+- assertVisible: "Full export"
+- assertVisible: "30 days"
+- assertVisible: "Refunds"
+- assertVisible: "Not available"
+
+# 5. Open Full Data Export Modal (Figma 86:596)
+- tapOn: "Export data"
+- extendedWaitUntil:
+    visible: "Export your data"
+    timeout: 5000
+
+# Verify Full Data Export elements (Figma 86:596)
+- assertVisible: "Include all bookkeeping documents and records"
+- assertVisible: "Report"
+- assertVisible: "All records and attachments"
+- assertVisible: "Period"
+- assertVisible: "All dates"
+- assertVisible: "Business"
+- assertVisible: "Acme Services LLC"
+- assertVisible: "Format"
+- assertVisible: "PDF / CSV"
+
+# 6. Trigger Prepare Full Export
+- tapOn: "Prepare full export"
+- extendedWaitUntil:
+    visible: "Export Complete|OK|Export Bundle Ready"
+    timeout: 8000
+
+- runFlow:
+    when:
+      visible: "OK"
+    commands:
+      - tapOn: "OK"
+
+# Close Data Export Modal
+- tapOn: "Back to reports"
+
+# 7. Dismiss Cancel Subscription Modal
+- tapOn: "Review terms"
+
+# 8. Save Billing Cycle and Close Manage Plan
+- tapOn: "Change billing cycle"
+
+- runFlow:
+    when:
+      visible: "OK"
+    commands:
+      - tapOn: "OK"
+
+# 9. Verify Updated Plan in Subscription Modal
+- extendedWaitUntil:
+    visible: "Subscription"
+    timeout: 5000
+
+# 10. Close Subscription Modal
+- tapOn: "Close"
+
+# 11. Close Settings Modal
+- tapOn: "Close settings"
+
+# 12. Confirm return to Dashboard
+- extendedWaitUntil:
+    visible: "Financial overview"
+    timeout: 5000
